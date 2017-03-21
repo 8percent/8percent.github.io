@@ -1,0 +1,10 @@
+_site
+.sass-cache
+Gemfile.lock
+_drafts
+.jsbeautifyrc
+.idea/8percent.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
