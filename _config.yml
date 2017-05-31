@@ -3,7 +3,7 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "에잇퍼센트 블로그"
+name:               "8퍼센트 프로덕트 블로그"
 
 #author:
 #  facebook:         your-id
@@ -24,7 +24,7 @@ name:               "에잇퍼센트 블로그"
 
 copyright:
   year:             2017
-  name:             Kiko
+  name:             8Percent
 
 # Google-analytics
 #google-analytics:
