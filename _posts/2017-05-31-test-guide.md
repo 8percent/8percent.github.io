@@ -78,7 +78,7 @@ fixture 를 대신해서 가급적 factory_boy 를 사용합니다.
 
 ## method mock
 
-함수를 mock 하는 경우 unittest.mock.patch() 를 사용합니다.
+메소드를 mock 하는 경우 unittest.mock.patch() 를 사용합니다.
 
 ### decorator
 
@@ -148,6 +148,7 @@ fixture 를 대신해서 가급적 factory_boy 를 사용합니다.
         def tearDown(self):
             self.freezer.stop()
     ```
+- 참고 링크: [freezegun](https://github.com/spulec/freezegun)
 
 ## 맺음말
 
