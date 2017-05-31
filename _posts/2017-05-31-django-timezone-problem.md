@@ -60,3 +60,6 @@ TIME_ZONE = 'Asia/Seoul'
 전세계의 기준 시간대가 한국 시간대면 좋겠지만 아닌게 현실이기 때문에 문제가 발생하지 않도록 잘 개발할 수 밖에 없는게 현실입니다.
 한국의 많은 django 개발자들에게 도움이 되길 바라면서 글을 마칩니다.
 
+### 참고
+
+[Django 1.9 timezones](https://docs.djangoproject.com/en/1.9/topics/i18n/timezones/)
