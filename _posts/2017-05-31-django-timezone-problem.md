@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Django timezone 문제 파헤치기"
-description: "Django timezone 문제를 파헤쳐보자"
+description: "Django timezone 문제를 공유합니다."
 date: 2017-05-31
 tags: [python,django,timezone]
 comments: true
