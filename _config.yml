@@ -57,8 +57,8 @@ kramdown:
 nav:
   - name:           "Posts"
     url:            "/archive"
-  - name:           "Github"
-    url:            "https://github.com/8percent/8percent.github.io"
+#  - name:           "Github"
+#    url:            "https://github.com/8percent/8percent.github.io"
 
 # Sass
 sass:
