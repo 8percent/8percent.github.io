@@ -118,6 +118,12 @@ body {
     font-weight: 600;
   }
 
+  &-author {
+    margin-bottom: .5rem;
+    color: $oc-gray-8;
+    font-size: .75rem;
+  }
+
   &-date {
     margin-bottom: .5rem;
     color: $oc-gray-8;
@@ -196,6 +202,19 @@ body {
       margin-bottom: .3rem;
       font-size : 1.8rem;
       font-weight: 600;
+    }
+
+    &-author {
+      margin-bottom: .3rem;
+      font-size : .8rem;
+    }
+
+    &-portrait {
+      width: 68px;
+      vertical-align: middle;
+      border-radius: 50%;
+      float: right;
+      margin-left: 56px;
     }
 
     &-date {

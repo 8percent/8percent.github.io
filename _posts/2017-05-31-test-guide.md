@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "8퍼센트 Test case 작성 가이드"
+author: seba
 description: "8퍼센트 개발팀의 Test case 작성 가이드를 공유합니다."
 date: 2017-05-31
 tags: [python,django,TDD,test,guide]

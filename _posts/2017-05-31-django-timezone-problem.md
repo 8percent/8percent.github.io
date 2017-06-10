@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Django timezone 문제 파헤치기"
+author: seba
 description: "Django timezone 문제를 공유합니다."
 date: 2017-05-31
 tags: [python,django,timezone]
