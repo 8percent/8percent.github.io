@@ -30,15 +30,15 @@ authors:
 
 copyright:
   year:             2017
-  name:             8Percent
+  name:             8PERCENT
 
 # Google-analytics
 #google-analytics:
 #  id:               ""
 
 # Disqus
-#disqus:
-#  id:               "kiko-plus"
+disqus:
+  id:               "8percent-product"
 
 # URL
 url:                "https://8percent.github.io" # the base hostname & protocol for your site
