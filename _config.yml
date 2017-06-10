@@ -5,7 +5,13 @@
 # Basic
 name:               "8퍼센트 프로덕트 블로그"
 
-#author:
+authors:
+  leclipse:
+    name: leclipse
+    display_name: Lee Ho Sung
+  seba:
+    name: seba
+    display_name: Seba
 #  facebook:         your-id
 #  youtubeUser:      your-id
 #  youtubeChannel:   your-id
@@ -55,8 +61,10 @@ kramdown:
 
 # Navigation
 nav:
-  - name:           "Posts"
-    url:            "/archive"
+  - name:           "블로그"
+    url:            "/"
+  - name:           "8퍼센트 브런치"
+    url:            "https://brunch.co.kr/@8percent"
 #  - name:           "Github"
 #    url:            "https://github.com/8percent/8percent.github.io"
 
