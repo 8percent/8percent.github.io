@@ -12,6 +12,12 @@ authors:
   seba:
     name: seba
     display_name: Seba
+  ianstream:
+    name: ianstream
+    display_name: Kim Yeon Tae
+  boo:
+    name: boo
+    display_name: Bu Hye Eun
 #  facebook:         your-id
 #  youtubeUser:      your-id
 #  youtubeChannel:   your-id
