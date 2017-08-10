@@ -41,6 +41,4 @@ permalink: /recruit/
 ## 지원 방법
 
 * [hr@8percent.kr](mailto:hr@8percent.kr)로 이력서를 제출 해주시면 됩니다.
-* 지원전에 궁금한 것이 있으시면 [hslee@8percent.kr](mailto:hslee@8percent.kr)로 문의를 주셔도 되고, 혹은 [페이스북](https://www.facebook.com/hosung.lee.948){:target="_blank"}으로 연락을 주셔도 됩니다.
-
-
+* 지원전에 궁금한 것이 있으시면 저의 이메일([hslee@8percent.kr](mailto:hslee@8percent.kr))로 문의를 주셔도 되고, 혹은 [페이스북](https://www.facebook.com/hosung.lee.948){:target="_blank"}으로 연락을 주셔도 됩니다.
