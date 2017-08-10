@@ -5,14 +5,14 @@ permalink: /recruit/
 
 ## 소개 
 
-* 에잇퍼센트는 [8퍼센트](https://8percent.kr)를 서비스하고 있는 핀테크 스타트업입니다.
+* 에잇퍼센트는 [8퍼센트](https://8percent.kr){:target="_blank"}를 서비스하고 있는 핀테크 스타트업입니다.
 
 ## 어떻게 일하나요?
 
 * 내부적으로 칸반을 사용하고 있습니다. 하지만 스크럼과 같이 주기를 가지고 일을 하며 2주에 한 번씩 전체 앞에서 데모를 하고 있습니다. 
 * 매일 아침 데일리 미팅을 통해 서로의 이야기를 나누고 진행 상황의 싱크를 맞춥니다. 
-* 저희가 사용하고 있는 [기술 스택](https://stackshare.io/8percent)을 참고 해 주세요. 특히 업무 도구로는 슬랙, 트렐로, 컨플루언스를 사용합니다.
-* 종종 [팀워크샵](http://brunch.co.kr/@leehosung/23)을 함께 갑니다.
+* 저희가 사용하고 있는 [기술 스택](https://stackshare.io/8percent){:target="_blank"}을 참고 해 주세요. 특히 업무 도구로는 슬랙, 트렐로, 컨플루언스를 사용합니다.
+* 종종 [팀워크샵](http://brunch.co.kr/@leehosung/23){:target="_blank"}을 함께 갑니다.
 
 ## 어떤 사람을 찾고 있나요?
 
@@ -34,13 +34,13 @@ permalink: /recruit/
 
 ## 참고해 주세요
 
-* [8퍼센트 브런치](https://brunch.co.kr/magazine/8percent)
-* [(여러분이 함께 일하게 되실)이호성의 블로그](http://blog.novice.io)
-* [예전에 쓴 채용글](https://brunch.co.kr/@8percent/23)
+* [8퍼센트 브런치](https://brunch.co.kr/magazine/8percent){:target="_blank"}
+* [(여러분이 함께 일하게 되실)이호성의 블로그](http://blog.novice.io){:target="_blank"}
+* [예전에 쓴 채용글](https://brunch.co.kr/@8percent/23){:target="_blank"}
 
 ## 지원 방법
 
-* hr@8percent.kr 로 이력서를 제출 해주시면 됩니다.
-* 지원전에 궁금한 것이 있으시면 hslee@8percent.kr 로 문의를 주셔도 되고, 혹은 [페이스북](https://www.facebook.com/hosung.lee.948)으로 연락을 주셔도 됩니다.
+* [hr@8percent.kr](mailto:hr@8percent.kr)로 이력서를 제출 해주시면 됩니다.
+* 지원전에 궁금한 것이 있으시면 [hslee@8percent.kr](mailto:hslee@8percent.kr)로 문의를 주셔도 되고, 혹은 [페이스북](https://www.facebook.com/hosung.lee.948){:target="_blank"}으로 연락을 주셔도 됩니다.
 
 
