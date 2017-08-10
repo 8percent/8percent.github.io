@@ -48,7 +48,7 @@ authors:
 
 copyright:
   year:             2017
-  name:             8Percent
+  name:             8PERCENT
 
 # Google-analytics
 #google-analytics:
@@ -79,12 +79,16 @@ kramdown:
 
 # Navigation
 nav:
-  - name:           "블로그"
-    url:            "/"
+  - name:           "소개"
+    url:            "/about"
+#  - name:           "블로그"
+#    url:            "/"
   - name:           "8퍼센트 브런치"
     url:            "https://brunch.co.kr/@8percent"
 #  - name:           "Github"
 #    url:            "https://github.com/8percent/8percent.github.io"
+  - name:           "채용정보"
+    url:            "/recruit"
 
 # Sass
 sass:
