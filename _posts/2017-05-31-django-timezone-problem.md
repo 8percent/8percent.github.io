@@ -40,7 +40,7 @@ TIME_ZONE = 'Asia/Seoul'
     ```python
     from django.utils import timezone
 
-    now = timezone.localtime(timezone.now())
+    now = timezone.localtime()
     ```
 
 3. naive datetime 객체를 어쩔 수 없이 사용해야 하는 경우 아래와 같은 코드를 사용해서 time-zone-aware datetime 객체로 변환합니다.
