@@ -130,7 +130,7 @@ ol {
 
   > li:before {
     counter-increment: section;
-    content: counter(section) ".";
+    // content: counter(section) ".";
     padding-right: $ol-bullets-right-space;
     font-family: $ol-bullets-font;
     font-size: $ol-bullets-font-size;
