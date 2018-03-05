@@ -54,6 +54,9 @@ authors:
   boram:
     name: boram
     display_name: Han Bo Ram
+  mansu:
+    name: mansu
+    display_name: Shin Man Su
 
 #  facebook:         your-id
 #  youtubeUser:      your-id
