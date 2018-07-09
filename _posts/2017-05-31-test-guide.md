@@ -109,7 +109,7 @@ fixture 를 대신해서 가급적 factory_boy 를 사용합니다.
 ## timezone
 
 - datetime.datetime.now() datetime.datetime.strptime() 등을 사용해서 naive datetime 객체를 django 모델의 DateTimeField 에 할당할 필요가 있는 경우 반드시 django.utils.timezone.make_aware() 를 사용해서 time-zone-aware datetime 객체로 변환한 후에 합니다.
-- 참고 링크: [Django timezone 문제 파헤치기](http://localhost:4000/2017-05-31/django-timezone-problem/)
+- 참고 링크: [Django timezone 문제 파헤치기](https://8percent.github.io/2017-05-31/django-timezone-problem/)
 
 ## freezegun
 
