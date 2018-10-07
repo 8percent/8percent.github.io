@@ -1,4 +1,5 @@
 ---
+
 layout: post
 title: "Django ORM cookbook 번역 후기"
 author: anorak
@@ -46,38 +47,40 @@ Read the docs를 세팅하는 것은 생각보다 간단했다.
 
 2. readthedocs.org 에 가입하여 프로젝트를 생성한다.
 
-   ![](/Users/aynoh/8percent.github.io/images/orm_1_my_project.png)
+
+
+   ![](../images/orm_1_my_project.png)
 
 3. 프로젝트를 임포트한다.
 
-   ![](/Users/aynoh/8percent.github.io/images/orm_2_import.png)
+   ![](../images/orm_2_import.png)
 
 4. GitHub 연결하여 fork 떠둔 Repository를 선택한다.
 
-   ![](/Users/aynoh/8percent.github.io/images/orm_4_choose_repo.png)
+   ![](../images/orm_4_choose_repo.png)
 
 5. Project Name 변경
    여기에서 원 repository의 프로젝트 이름과 겹치지 않도록 프로젝트 이름을 적절하게 변경해주어야한다.
 
-   ![](/Users/aynoh/8percent.github.io/images/orm_5_project_set.png)
+   ![](../images/orm_5_project_set.png)
 
 6. web hook 확인
    repository에서 pr/push를 하게되면 해당 내용을 자동으로 업데이트해준다.
 
-   ![](/Users/aynoh/8percent.github.io/images/orm_6_incoming_webhook.png)
+   ![](../images/orm_6_incoming_webhook.png)
 
-   ![](/Users/aynoh/8percent.github.io/images/orm_7_web_hook.png)
+   ![](../images/orm_7_web_hook.png)
 
 7. 제공된 Short URL로 접근해보면, 결과를 확인해볼 수 있다.
 
-   ![](/Users/aynoh/8percent.github.io/images/orm_8_get_url.png)
+   ![](../images/orm_8_get_url.png)
 
 
 8. 번역문서 PR을 만들고, 마스터에 병합하면 사이트에 반영이 된다.
 
-![](/Users/aynoh/8percent.github.io/images/orm_9_pr.png)
+![](../images/orm_9_pr.png)
 
-![](/Users/aynoh/8percent.github.io/images/orm_10_check.png)
+![](../images/orm_10_check.png)
 
 PR을 만들 때 주의할 점은 자신이 포크를 떠놓은 repository에 PR을 해야한다는 것이다.
 
