@@ -33,7 +33,7 @@ Read the docs와 Spinx 처음 사용해보는 것인데, 호성님께서 스터�
 
 
 
-### Read the docs
+## Read the docs
 
 - 소프트웨어의 문서를 생성하고, 버전을 매기고, 호스팅하는 목적이다.
 - 대부분의 파이썬 오픈소스 프로젝트가 이 사이트를 이용하며 무료이다.
@@ -59,12 +59,12 @@ Read the docs를 세팅하는 것은 생각보다 간단했다.
 
    ![](../images/orm_4_choose_repo.png)
 
-5. Project Name 변경
+5. Project Name 변경. 
    여기에서 원 repository의 프로젝트 이름과 겹치지 않도록 프로젝트 이름을 적절하게 변경해주어야한다.
 
    ![](../images/orm_5_project_set.png)
 
-6. web hook 확인
+6. web hook 확인  
    repository에서 pr/push를 하게되면 해당 내용을 자동으로 업데이트해준다.
 
    ![](../images/orm_6_incoming_webhook.png)
@@ -82,13 +82,13 @@ Read the docs를 세팅하는 것은 생각보다 간단했다.
 
 ![](../images/orm_10_check.png)
 
-PR을 만들 때 주의할 점은 자신이 포크를 떠놓은 repository에 PR을 해야한다는 것이다.
+PR을 만들 때 주의할 점은 자신이 포크를 떠놓은 repository에 PR을 해야한다는 것이다.  
 
 원 repositroy가 기본 세팅되어 있어서 영문서 repository에 번역 PR을 보내버리는 실수를 하기도 했었다. 
 
 
 
-### Sphinx
+## Sphinx
 
 - 개발자가 문서를 만들어 내기 위한 도구. reStructuredText 를 마크업 언어로 사용한다.
 - 내부적으로는 docutils 를 사용한다. 
@@ -99,11 +99,7 @@ PR을 만들 때 주의할 점은 자신이 포크를 떠놓은 repository에 PR
 
 
 
-fork 한 repository를 로컬에서 클론 받아 가상환경을 세팅한 후 Sphinx를 설치해보았다.
-
-`pip install sphinx` 로 설치를 하고 html 빌드를 해보면 sphinx_rtd_theme을 설치해야한다는 에러가 뜬다.
-
-config 파일을 보면 html_theme 에  sphinx_rtd_theme 를 사용하고 있다는 것을 알 수 있다.
+fork 한 repository를 로컬에서 클론 받아 가상환경을 세팅한 후 Sphinx를 설치해보았다. `pip install sphinx` 로 설치를 하고 html 빌드를 해보면 sphinx_rtd_theme을 설치해야한다는 에러가 뜬다. config 파일을 보면 html_theme 에  sphinx_rtd_theme 를 사용하고 있다는 것을 알 수 있다.
 
 `pip install sphinx_rtd_theme` 로 테마를 설치해준 후, 다시 빌드 해주었다.
 
@@ -115,22 +111,17 @@ docs/_build/html/index.html 파일을 열어보면 빌드가 잘 된 것을 확�
 
 
 
-#### PDF로 변환하기
+### PDF로 변환하기
 
 rst 문서는 latex 라는 형식을 거쳐 pdf 로 변환할 수 있다.
 
 
 
-https://www.latex-project.org/get/ 에서 mactex(Unix의 경우) 를 다운받아 설치한다.
+- https://www.latex-project.org/get/ 에서 mactex(Unix의 경우) 를 다운받아 설치한다.
 
-- /docs 위치에서 다음과 같은 명령어로 latex를 생성한다.
+- /docs 위치에서 `sphinx-build -b latex . _build/latex` 명령어로 latex를 생성한다.
 
-  `sphinx-build -b latex . _build/latex`
-
-- /docs/_build/latex (Makefile 이 위치한 곳)에서 아래와 같은 명령어로 pdf 를 생성한다.
-
-  `make all-pdf`
-
+- /docs/_build/latex (Makefile 이 위치한 곳)에서 `make all-pdf`로 pdf 를 생성한다.
 
 
 그런데 한글 문서이다보니 pdf 변환 전에 해야할 일이 조금 더 있다. 
