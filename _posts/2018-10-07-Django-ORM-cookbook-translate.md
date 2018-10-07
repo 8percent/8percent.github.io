@@ -134,7 +134,6 @@ rst 문서는 latex 라는 형식을 거쳐 pdf 로 변환할 수 있다.
 ```
 sed -i '' 's/\[T1\]{fontenc}/{kotex}/g' ./_build/latex/DjangoORMCookbook.tex
 sed -i '' 's/{babel}/\[english\]{babel}/g' ./_build/latex/DjangoORMCookbook.tex
-sed -i '' '/BookCover/d' ./_build/latex/DjangoORMCookbook.tex
 ```
 
 위 과정을 마치고 `make all-pdf` 를 사용하여 pdf 파일을 생성한다. 
