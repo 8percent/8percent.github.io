@@ -2,7 +2,7 @@
 
 layout: post
 title: "Django ORM cookbook 번역 후기"
-author: anorak
+author: anohk
 description: "Django ORM cookbook 번역 후기"
 date: 2018-10-07
 tags: [django]
