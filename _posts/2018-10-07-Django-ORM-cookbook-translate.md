@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: "Django ORM cookbook 번역 후기"
 author: anohk
@@ -15,7 +14,7 @@ comments: true
 
 8퍼센트에서는 여전히 스터디가 꾸준히 이어지고 있다. 스터디를 마치면 자연스레 다음엔 무엇을 해볼까? 하는 기대감이 생기곤 한다. 이번에는 회사에서 메인으로 사용하고 있는 Django에 대해 조금 더 알아보고, 업무에도 바로 적용해 볼 수 있는 스터디를 하기로 결정했다.
 
-호성님의 제안으로 우리는 Django ORM Cookbook 문서로 시작해보기로 했다. Django ORM Cookbook은 Django의 ORM과 모델의 다양한 기능을 활용하는 방법들을 다루고 있다.  
+호성님의 제안으로 우리는 [Django ORM Cookbook](http://books.agiliq.com/projects/django-orm-cookbook/en/latest/) 책을 공부해 보기로 했다. Django ORM Cookbook은 Django의 ORM과 모델의 다양한 기능을 활용하는 방법들을 다루고 있다.  
 
 스터디를 본격적으로 시작하기 전에 스터디 멤버들이 모두 모여, 스터디를 어떻게 진행하면 좋을지 이야기를 나누었다. 이 과정에서, 오픈소스 문서를 한글로 번역해서 공유하자는 아이디어가 나왔고 바로 실행해보기로 했다.
 
@@ -25,11 +24,17 @@ comments: true
 
 이 문서로 스터디를 하면서 한글 번역에 기여해보고싶다. 가이드가 있을까요? 정도의 짧은 문장을 적어 메일을 보냈다. 늦은 밤에 메일을 보냈더니 바로 답장이 왔다. 원저자는 매우 기뻐했고, sphinx와 readthedocs를 이용해보라는 이야기를 해주었다. 도움이 필요하면 언제든 연락주라는 이야기와 함께.
 
+![](../images/orm-mail-1.png)
+
+![](../images/orm-mail-2.png)
+
+
+
 
 
 # 문서는 어떻게 만드나요?
 
-Read the docs와 Spinx 처음 사용해보는 것인데, 호성님께서 스터디 시간에 간략히 설명을 해주셨다. 
+Read the docs와 Sphinx는 처음 사용해보는 것인데, 호성님께서 스터디 시간에 간략히 설명을 해주셨다. 
 
 
 
@@ -37,7 +42,7 @@ Read the docs와 Spinx 처음 사용해보는 것인데, 호성님께서 스터�
 
 - 소프트웨어의 문서를 생성하고, 버전을 매기고, 호스팅하는 목적이다.
 - 대부분의 파이썬 오픈소스 프로젝트가 이 사이트를 이용하며 무료이다.
-- 호스팅도 하지만 직접 설지해서 쓸 수 있고, private 호스팅도 지원한다.
+- 호스팅도 하지만 직접 설치해서 쓸 수 있고, private 호스팅도 지원한다.
 
 
 
@@ -47,40 +52,38 @@ Read the docs를 세팅하는 것은 생각보다 간단했다.
 
 2. readthedocs.org 에 가입하여 프로젝트를 생성한다.
 
-
-
-   ![](../images/orm_1_my_project.png)
+	![](../images/orm_1_my_project.png)
 
 3. 프로젝트를 임포트한다.
 
-   ![](../images/orm_2_import.png)
+	![](../images/orm_2_import.png)
 
 4. GitHub 연결하여 fork 떠둔 Repository를 선택한다.
 
-   ![](../images/orm_4_choose_repo.png)
+	![](../images/orm_4_choose_repo.png)
 
 5. Project Name 변경. 
    여기에서 원 repository의 프로젝트 이름과 겹치지 않도록 프로젝트 이름을 적절하게 변경해주어야한다.
 
-   ![](../images/orm_5_project_set.png)
+	![](../images/orm_5_project_set.png)
 
 6. web hook 확인  
    repository에서 pr/push를 하게되면 해당 내용을 자동으로 업데이트해준다.
 
-   ![](../images/orm_6_incoming_webhook.png)
+	![](../images/orm_6_incoming_webhook.png)
 
-   ![](../images/orm_7_web_hook.png)
+	![](../images/orm_7_web_hook.png)
 
 7. 제공된 Short URL로 접근해보면, 결과를 확인해볼 수 있다.
 
-   ![](../images/orm_8_get_url.png)
+	![](../images/orm_8_get_url.png)
 
 
 8. 번역문서 PR을 만들고, 마스터에 병합하면 사이트에 반영이 된다.
 
-![](../images/orm_9_pr.png)
+	![](../images/orm_9_pr.png)
 
-![](../images/orm_10_check.png)
+	![](../images/orm_10_check.png)
 
 PR을 만들 때 주의할 점은 자신이 포크를 떠놓은 repository에 PR을 해야한다는 것이다.  
 
@@ -149,9 +152,11 @@ Django ORM cookbook의 각 장은 간단한 설명과 예제 코드로 이루어
 
 
 
-번역을 완료한 후에 원저자에게 다시 메일을 보냈다. 우리 번역 끝냈어요! 
+번역을 완료한 후에 원저자에게 다시 메일을 보냈다. 우리 번역 끝냈어요!  
 
-원저자는 또 한번 기뻐하며 조만간 한글문서에 영문서 링크를 첨부하겠다고 답장을 주었다. 
+원저자는 또 한번 기뻐하며 조만간 번역문서 링크를 영문서에 첨부하겠다고 답장을 주었다.  
+
+![](../images/orm-mail-3.png)
 
 
 
