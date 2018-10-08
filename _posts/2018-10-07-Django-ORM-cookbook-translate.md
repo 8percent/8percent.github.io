@@ -24,9 +24,9 @@ comments: true
 
 이 문서로 스터디를 하면서 한글 번역에 기여해보고싶다. 가이드가 있을까요? 정도의 짧은 문장을 적어 메일을 보냈다. 늦은 밤에 메일을 보냈더니 바로 답장이 왔다. 원저자는 매우 기뻐했고, sphinx와 readthedocs를 이용해보라는 이야기를 해주었다. 도움이 필요하면 언제든 연락주라는 이야기와 함께.
 
-![](../images/orm-mail-1.png)
+![](/images/orm-mail-1.png)
 
-![](../images/orm-mail-2.png)
+![](/images/orm-mail-2.png)
 
 
 
