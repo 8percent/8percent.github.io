@@ -7,8 +7,6 @@ date: 2019-12-16 12:00 +0900
 tags: [python, mapping, date]
 comments: true
 ---
-* table of contents
-{:toc}
 
 일정한 날짜 구간에 값을 매핑하는 방법을 알아봅시다.
 
