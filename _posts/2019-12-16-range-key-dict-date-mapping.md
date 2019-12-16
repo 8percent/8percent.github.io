@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "날짜 구간에 값을 매핑하는 방법 (그리고 RangeKeyDict)"
-author: 박연오(bakyeono@gmail.com)
+author: 박연오
 description: "날짜 구간에 값을 매핑하는 방법과 RangeKeyDict의 사용법"
 date: 2019-12-16 12:00 +0900
 tags: [python, mapping, date]
