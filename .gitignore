@@ -9,3 +9,4 @@ _drafts
 .idea/vcs.xml
 .idea/inspectionProfiles/profiles_settings.xml
 .swp
+.jekyll-cache
