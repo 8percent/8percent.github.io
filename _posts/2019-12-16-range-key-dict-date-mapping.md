@@ -31,7 +31,7 @@ def date_to_point_rate(base_date):
         return Decimal('0.02')
     return Decimal('0.08')
 
-assert date_to_point_rate(date(2019, 12, 31)) == None
+assert date_to_point_rate(date(2019, 12, 31)) is None
 assert date_to_point_rate(date(2020, 1, 1)) == Decimal('0.01')
 assert date_to_point_rate(date(2020, 2, 2)) == Decimal('0.02')
 assert date_to_point_rate(date(2020, 8, 8)) == Decimal('0.08')
@@ -55,7 +55,7 @@ def date_to_point_rate_v2(base_date):
         if applying_date <= base_date:
             return point_rate
 
-assert date_to_point_rate_v2(date(2019, 12, 31)) == None
+assert date_to_point_rate_v2(date(2019, 12, 31)) is None
 assert date_to_point_rate_v2(date(2020, 1, 1)) == Decimal('0.01')
 assert date_to_point_rate_v2(date(2020, 2, 2)) == Decimal('0.02')
 assert date_to_point_rate_v2(date(2020, 8, 8)) == Decimal('0.08')
@@ -65,7 +65,7 @@ assert date_to_point_rate_v2(date(2020, 8, 8)) == Decimal('0.08')
 
 이 코드를 보고 직장 동료 김남홍 님이 좋은 방법을 귀뜸해 줬습니다. "RangeKeyDict 한 번 써봐!"
 
-[RangeKeyDict](https://github.com/albertmenglongli/range-key-dict)는 파이썬에 이런 게 있으면 좋겠다고 한 번쯤 생각했던 겁니다. 사전(dict)의 키로 range를 사용할 수 있는 매핑 컬렉션입니다.
+[RangeKeyDict](https://github.com/albertmenglongli/range-key-dict)는 파이썬에 이런 게 있으면 좋겠다고 한 번쯤 생각했던 겁니다. 값의 범위(range)를 사전(dict)의 키로 사용할 수 있는 매핑 컬렉션입니다.
 
 RangeKeyDict를 사용하려면 range-key-dict 패키지를 설치해야 합니다.
 
@@ -88,12 +88,12 @@ applying_date_to_point_rate_mapping = RangeKeyDict({
 def date_to_point_rate_v3(base_date):
     return applying_date_to_point_rate_mapping[base_date]
 
-assert date_to_point_rate_v3(date(2019, 12, 31)) == None
+assert date_to_point_rate_v3(date(2019, 12, 31)) is None
 assert date_to_point_rate_v3(date(2020, 1, 1)) == Decimal('0.01')
 assert date_to_point_rate_v3(date(2020, 2, 2)) == Decimal('0.02')
 assert date_to_point_rate_v3(date(2020, 8, 8)) == Decimal('0.08')
 ```
 
-코드가 꽤 직관적입니다. RangeKeyDict는 꼭 날짜가 아니더라도 어떤 범위에 값을 매핑할 때 편리하게 사용할 수 있습니다. 자주 바뀌는 법령, 정책 등을 반영할 일이 있으면 RangeKeyDict를 활용해보시면 좋을 것입니다.
+코드가 꽤 직관적입니다. RangeKeyDict는 꼭 날짜가 아니더라도 어떤 범위에 값을 매핑할 때 편리하게 사용할 수 있습니다. 자주 바뀌는 법령이나 정책을 적용할 때 RangeKeyDict를 활용해보시면 좋을 것입니다.
 
 
