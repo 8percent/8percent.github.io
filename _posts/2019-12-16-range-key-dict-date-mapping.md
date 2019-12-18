@@ -24,7 +24,7 @@ comments: true
 
 이것은 if 문을 이용해 간단히 코드로 옮길 수 있습니다.
 
-```
+```python
 from datetime import date
 from decimal import Decimal
 
@@ -50,7 +50,7 @@ assert date_to_point_rate(date(2020, 8, 8)) == Decimal('0.08')
 
 날짜 구간에 값을 매핑해야 하는 경우가 자주 있어서 더 좋은 방법을 생각해 보았습니다. 날짜와 값을 쌍으로 지정해 두고 그 안에서 날짜를 맞추면 어떨까요?
 
-```
+```python
 # 주의: 적용 날짜를 내림차순으로 나열해야 한다.
 applying_date_to_point_rate_pairs = (
     (date(2020, 8, 8), Decimal('0.08')),
@@ -81,13 +81,13 @@ assert date_to_point_rate_v2(date(2020, 8, 8)) == Decimal('0.08')
 
 RangeKeyDict를 사용하려면 range-key-dict 패키지를 설치해야 합니다.
 
-```
+```bash
 pip install range-key-dict
 ```
 
 이제 `range_key_dict.RangeKeyDict`를 임포트하여 `RangeKeyDict({(start, end): value})`와 같은 형태로 매핑을 작성할 수 있습니다. 포인트 정책을 RangeKeyDict로 수정해 봅시다.
 
-```
+```python
 from range_key_dict import RangeKeyDict
 
 applying_date_to_point_rate_mapping = RangeKeyDict({
