@@ -3,7 +3,7 @@ layout: post
 title: "Tableau로 사무실 대시보드 구축하기(1)"
 author: leehosung
 description: "Tableau에 대한 간단한 소개와 사무실 대시보드를 구축하게 된 동기"
-date: 2020-10-10 12:00 +0900
+date: 2020-01-10 12:00 +0900
 tags: [tableau, dashboard]
 comments: true
 ---
