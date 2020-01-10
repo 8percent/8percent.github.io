@@ -10,3 +10,5 @@ _drafts
 .idea/inspectionProfiles/profiles_settings.xml
 .swp
 .jekyll-cache
+.DS_Store
+*.swp
