@@ -11,7 +11,7 @@ comments: true
 이 글은 "Tableau로 사무실 대시보드 구축하기" 시리즈의 두번째 글 입니다.
 
 1. [Tableau 에 대한 간단한 소개와 구축 동기](https://8percent.github.io/2020-01-10/tableau-dashboard1)
-2. **Tableau Server 설치하기**
+2. <u>**Tableau Server 설치하기**</u>
 3. Prep Builder 로 데이터 흐름 만들기
 4. Tableau Desktop으로 Dashboard 만들기
 5. 여러 개의 Dashboard를 자동으로 Rotation & Refresh 하기
