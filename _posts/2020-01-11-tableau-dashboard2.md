@@ -158,12 +158,12 @@ Tableau Server는 다양한 [프로세스](Tableau Server Processes) 를 사용�
 </figure>
 </center>
 
-admin 계정의 설정이 필요합니다. admin 에 대한 설정을 진행하면 정상적으로 접속이 가능합니다.
+최초 계정 생성이 필요합니다. 
 
 <center>
 <figure>
 <img src="/images/tableau-server-10.png" alt="views">
-<figcaption>어드민 계정 생성하기</figcaption>
+<figcaption>계정 생성하기</figcaption>
 </figure>
 </center>
 
