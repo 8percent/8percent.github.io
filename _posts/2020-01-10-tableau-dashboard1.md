@@ -19,8 +19,8 @@ comments: true
 
 그 과정을 간단히 공유해 보려고 합니다. 글의 순서는 다음과 같이 진행될 예정입니다.
 
-1. Tableau에 대한 간단한 소개와 구축 동기
-2. Tableau Server 설치하기
+1. **Tableau에 대한 간단한 소개와 구축 동기**
+2. [Tableau Server 설치하기](https://8percent.github.io/2020-01-11/tableau-dashboard2/)
 3. Prep Builder 로 데이터 흐름 만들기
 4. Tableau Desktop으로 Dashboard 만들기
 5. 여러 개의 Dashboard를 자동으로 Rotation & Refresh 하기
