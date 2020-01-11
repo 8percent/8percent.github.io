@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Tableau로 사무실 대시보드 구축하기(2)"
+title: "Tableau Server 설치하기"
 author: leclipse
-description: "Tableau 서버 설치하기"
+description: "AWS에 Tableau Server 설치하기"
 date: 2020-01-11 12:00 +0900
 tags: [tableau, dashboard]
 comments: true
