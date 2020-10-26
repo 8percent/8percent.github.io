@@ -1,4 +1,12 @@
-# for loop와 transaction.on_commit()
+---
+layout: post
+title: "for loop에서 transaction.on_commit 사용하기"
+author: aynoh
+description: "for loop와 transaction.on_commit"
+date: 2020-10-26 12:00 +0900
+tags: [python, transaction]
+comments: true
+---
 
 transaction block 안에서 for loop와 `on_commit`을 사용할 때 발생할 수 있는 이슈를 공유합니다.
 
