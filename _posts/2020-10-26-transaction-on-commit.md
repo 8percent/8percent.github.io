@@ -25,7 +25,7 @@ with transaction.atomic():
         transaction.on_commit(lambda send_notification(user))
 ```
 
-기대한 바는 event.won_users를 순회하며 당첨자 마다 알림을 보내는 것입니다.
+기대한 바는 event.won_users를 순회하며 각 당첨자마다 알림을 보내는 것입니다.
 
 하지만 위 코드에는 문제가 있습니다. 이 코드를 실행하면 won_users의 마지막 사용자에게 10번의 알림을 전송하는 무서운 일이 발생하게 됩니다.
 
