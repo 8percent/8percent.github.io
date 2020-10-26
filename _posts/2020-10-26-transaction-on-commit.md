@@ -18,10 +18,10 @@ transaction block 안에서 for loop와 `on_commit`을 사용할 때 발생할 �
 
 ```python
 with transaction.atomic():
-	event.draw_lots(10)
-	
-	for user in event.won_users:
-		transaction.on_commit(lambda send_notification(user))
+    event.draw_lots(10) 
+
+    for user in event.won_users:
+        transaction.on_commit(lambda send_notification(user))
 ```
 
 기대한 바는 event.won_users를 순회하며 당첨자 마다 알림을 보내는 것입니다.
@@ -42,10 +42,10 @@ with transaction.atomic():
 
 ```python
 with transaction.atomic():
-	event.draw_lots(10)
+    event.draw_lots(10)
 
-	for user in event.won_users:
-		transaction.on_commit(lambda user=user: send_notification(user))
+    for user in event.won_users:
+        transaction.on_commit(lambda user=user: send_notification(user))
 ```
 
 위와 같이 작성하면 won_users에 담긴 사용자가 차례대로 익명 함수의 인자에 기본 값으로 할당되어 의도한 대로 모든 당첨자에게 알림을 전송할 수 있습니다.
@@ -64,15 +64,15 @@ transaction.on_commit(lambda user: send_notification(user))
 
 ```
 def call_back_0():
-	send_notification(user)
+    send_notification(user)
 
 def call_back_1():
-	send_notification(user)
+    send_notification(user)
 
 ...
 
 def call_back_9():
-	send_notification(user)
+    send_notification(user)
 ```
 
 여기에서 등록하려는 콜백 함수는 user를 인자로 받는 함수를 실행합니다. 콜백 함수에는 인자를 넘기지 않기 때문에, 인자는 어디에선가 정의되있어야 합니다. (위 함수들을 차례로 실행할 때 user는 변하지 않고, 실행 시점에 평가되어 있는 값을 사용하게 됩니다.)
@@ -81,22 +81,22 @@ def call_back_9():
 
 ```
 for user in event.won_users:
-	transaction.on_commit(lambda user=user: send_notification(user))
+    transaction.on_commit(lambda user=user: send_notification(user))
 ```
 
 위의 익명 함수를 풀어쓰면 아래와 같습니다.
 
 ```
 def call_back_0(user=첫번째 사용자):
-	send_notification(user)
+    send_notification(user)
 
 def call_back_1(user=두번째 사용자):
-	send_notification(user)
+    send_notification(user)
 
 ...
 
 def call_back_9(user=열번째 사용자):
-	send_notification(user)
+    send_notification(user)
 ```
 
 콜백 함수에 for loop내에서 평가된 user를 인자의 기본 값으로 정의했기 때문에, 인자 없이 함수를 호출한 경우 user는 기본 값을 사용하여 의도한 대로 함수를 실행할 수 있습니다.
