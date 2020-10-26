@@ -12,6 +12,7 @@ transaction block 안에서 for loop와 `on_commit`을 사용할 때 발생할 �
 
 데이터베이스 트랜잭션과 관련된 작업을 할 때, 트랜잭션이 성공적으로 커밋 된 경우에만 특정 동작을 실행시켜야 할 때가 있습니다. Django에서 제공하는 on_commit 을 사용하면 정의된 콜백 함수를 등록 해두고 트랜잭션이 커밋된 후에 등록된 순서대로 콜백 함수를 실행할 수 있습니다.
 
+
 ## 문제 상황
 
 예를 들어, 8퍼센트 추첨 이벤트에서 10명의 사용자를 추첨하고 당첨된 사용자에게 안내를 해야 하는 상황이라고 가정해 봅시다.
@@ -28,6 +29,7 @@ with transaction.atomic():
 
 하지만 위 코드에는 문제가 있습니다. 이 코드를 실행하면 won_users의 마지막 사용자에게 10번의 알림을 전송하는 무서운 일이 발생하게 됩니다.
 
+
 ## 원인
 
 콜백 함수가 실행될 때 함수에 전달한 인자가 언제 평가 되는지 고려하지 못한 것이 원인입니다.
@@ -35,6 +37,7 @@ with transaction.atomic():
 문제가 되는 코드에서는 for loop를 돌면서 당첨자 수 만큼 콜백 함수를 등록합니다.
 
 등록된 함수들을 실행하려고 할 때에는 모든 당첨자에 대해 순회를 마치고 마지막 사용자가 user에 할당된 상태이기 때문에 마지막 사용자만 10번의 알림을 받게 되는 것입니다.
+
 
 ## 문제 해결 방법
 
@@ -50,19 +53,20 @@ with transaction.atomic():
 
 위와 같이 작성하면 won_users에 담긴 사용자가 차례대로 익명 함수의 인자에 기본 값으로 할당되어 의도한 대로 모든 당첨자에게 알림을 전송할 수 있습니다.
 
+
 ## 자세히
 
 `transaction.on_commit()`은 인자가 없는 함수를 인자로 받습니다.
 
 on_commit은 인자 없이 콜백 함수를 호출하기 때문에 아래와 같이 익명 함수에 인자를 넘겨야 하는 방식은 사용할 수 없습니다.
 
-```
+```python
 transaction.on_commit(lambda user: send_notification(user))
 ```
 
 처음 작성한 코드에서 커밋 후 실행될 익명 함수들을 풀어쓰면 아래와 같이 표현해 볼 수 있습니다.
 
-```
+```python
 def call_back_0():
     send_notification(user)
 
@@ -79,14 +83,14 @@ def call_back_9():
 
 하지만 익명 함수의 인자에 기본 값을 할당한다면, 인자 없이 함수를 호출하는 것이 가능합니다.
 
-```
+```python
 for user in event.won_users:
     transaction.on_commit(lambda user=user: send_notification(user))
 ```
 
 위의 익명 함수를 풀어쓰면 아래와 같습니다.
 
-```
+```python
 def call_back_0(user=첫번째 사용자):
     send_notification(user)
 
