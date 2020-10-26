@@ -10,7 +10,7 @@ comments: true
 
 transaction block 안에서 for loop와 `on_commit`을 사용할 때 발생할 수 있는 이슈를 공유합니다.
 
-데이터베이스 트랜잭션과 관련된 작업을 할 때, 트랜잭션이 성공적으로 커밋 된 경우에만 특정 동작을 실행시켜야 할 때가 있습니다. Django에서 제공하는 on_commit 을 사용하면 정의된 콜백 함수를 등록 해두고 트랜잭션이 커밋된 후에 등록된 순서대로 콜백 함수를 실행할 수 있습니다.
+데이터베이스 트랜잭션과 관련된 작업을 할 때, 트랜잭션이 성공적으로 커밋 된 경우에만 특정 동작을 실행시켜야 할 때가 있습니다. Django에서 제공하는 [on_commit](https://docs.djangoproject.com/en/3.1/topics/db/transactions/#django.db.transaction.on_commit) 을 사용하면 정의된 콜백 함수를 등록 해두고 트랜잭션이 커밋된 후에 등록된 순서대로 콜백 함수를 실행할 수 있습니다.
 
 
 ## 문제 상황
