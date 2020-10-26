@@ -4,7 +4,7 @@ title: "for loop에서 transaction.on_commit 사용하기"
 author: anohk
 description: "for loop와 transaction.on_commit"
 date: 2020-10-26 12:00 +0900
-tags: [python, transaction]
+tags: [python, django, transaction]
 comments: true
 ---
 
