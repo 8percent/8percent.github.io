@@ -2,7 +2,7 @@
 layout: post
 title: "for loop에서 transaction.on_commit 사용하기"
 author: anohk
-description: "for loop와 transaction.on_commit"
+description: "for 루프에서 transaction.on_commit을 사용할 때 콜백 함수에 인자를 올바르게 넘기는 방법"
 date: 2020-10-26 12:00 +0900
 tags: [python, django, transaction]
 comments: true
