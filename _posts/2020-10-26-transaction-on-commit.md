@@ -41,7 +41,7 @@ with transaction.atomic():
 
 ## 문제 해결 방법
 
-익명 함수의 인자에 기본 값을 설정하는 방법으로 해결할 수 있습니다.
+익명 함수의 매개변수에 기본값을 정의하는 방법으로 이 문제를 해결할 수 있습니다.
 
 ```python
 with transaction.atomic():
