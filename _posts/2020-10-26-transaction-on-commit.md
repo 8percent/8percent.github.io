@@ -51,7 +51,7 @@ with transaction.atomic():
         transaction.on_commit(lambda user=user: send_notification(user))
 ```
 
-위와 같이 작성하면 won_users에 담긴 사용자가 차례대로 익명 함수의 인자에 기본 값으로 할당되어 의도한 대로 모든 당첨자에게 알림을 전송할 수 있습니다.
+위와 같이 작성하면 won_users에 포함된 사용자들이 각각 차례대로 익명 함수의 매개변수의 기본값으로 정의되며, 의도한 대로 모든 당첨자에게 알림을 발송할 수 있습니다.
 
 
 ## 자세히
