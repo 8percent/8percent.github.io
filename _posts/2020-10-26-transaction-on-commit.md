@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "for loop에서 transaction.on_commit 사용하기"
+title: "for 루프에서 transaction.on_commit을 사용할 때 콜백 함수에 인자를 올바르게 넘기는 방법"
 author: anohk
 description: "for 루프에서 transaction.on_commit을 사용할 때 콜백 함수에 인자를 올바르게 넘기는 방법"
 date: 2020-10-26 12:00 +0900
@@ -8,9 +8,9 @@ tags: [python, django, transaction]
 comments: true
 ---
 
-transaction block 안에서 for loop와 `on_commit`을 사용할 때 발생할 수 있는 이슈를 공유합니다.
+transaction 블록 안에서 for 루프와 `on_commit`을 사용할 때 발생할 수 있는 이슈를 공유합니다.
 
-데이터베이스 트랜잭션과 관련된 작업을 할 때, 트랜잭션이 성공적으로 커밋 된 경우에만 특정 동작을 실행시켜야 할 때가 있습니다. Django에서 제공하는 [on_commit](https://docs.djangoproject.com/en/3.1/topics/db/transactions/#django.db.transaction.on_commit) 을 사용하면 정의된 콜백 함수를 등록 해두고 트랜잭션이 커밋된 후에 등록된 순서대로 콜백 함수를 실행할 수 있습니다.
+트랜잭션이 성공적으로 커밋 된 경우에만 특정 동작을 실행해야 할 때가 있습니다. 이 때 장고의 [transaction.on_commit](https://docs.djangoproject.com/en/3.1/topics/db/transactions/#django.db.transaction.on_commit) 함수를 사용하여 콜백 함수를 등록하면 트랜잭션이 커밋된 후 등록된 순서대로 콜백 함수가 실행됩니다.
 
 
 ## 문제 상황
