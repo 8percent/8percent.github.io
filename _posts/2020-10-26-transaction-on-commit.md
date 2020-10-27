@@ -58,7 +58,7 @@ with transaction.atomic():
 
 `transaction.on_commit()`은 매개변수가 없는 함수를 인자로 받습니다.
 
-on_commit은 인자 없이 콜백 함수를 호출하기 때문에 아래와 같이 익명 함수에 인자를 넘겨야 하는 방식은 사용할 수 없습니다.
+on_commit은 콜백 함수를 호출할 때 콜백 함수에 별도의 인자를 전달하지 않습니다. 따라서 아래와 같이 필수 매개변수가 정의된 익명 함수를 등록하는 방식은 사용할 수 없습니다.
 
 ```python
 transaction.on_commit(lambda user: send_notification(user))
