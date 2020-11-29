@@ -177,11 +177,11 @@ product2.delete()
 
 ## SQL으로 역방향 참조를 확인하고 싶나요?
 
-SQL으로도 역방향 참조를 확인할 수 있습니다. Dataedo의 문서([Dataedo의 문서](https://dataedo.com/kb/query/postgresql/list-foreign-keys))을 참고하세요.
+SQL으로도 역방향 참조를 확인할 수 있습니다. Dataedo의 문서(<https://dataedo.com/kb/query/postgresql/list-foreign-keys>)을 참고하세요.
 
 ## 참고 자료
 
-장고 Options 클래스 소스코드: [장고 Options 클래스 소스코드](https://docs.djangoproject.com/en/2.2/_modules/django/db/models/options/)
+장고 Options 클래스 소스코드: <https://docs.djangoproject.com/en/2.2/_modules/django/db/models/options/>
 
 ## 장고를 좋아하시나요?
 
