@@ -34,7 +34,7 @@ for related_object in Deal._meta.related_objects:
 
 설명을 위해 단순한 상품 판매 모델을 예로 들겠습니다.
 
-![예제의 ERD](images/lookup-reversed-foreign-keys-1.png)
+![예제의 ERD](/images/lookup-reversed-foreign-keys-1.png)
 
 ```
 class ProductCategory(Model):
