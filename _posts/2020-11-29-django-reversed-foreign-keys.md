@@ -3,7 +3,7 @@ layout: post
 title: "[장고 ORM] 역방향 참조 외래 키 찾기"
 author: bakyeono
 description: "[장고 ORM] 역방향 참조 외래 키 찾기"
-date: 2019-11-29 20:00 +0900
+date: 2020-11-29 20:00 +0900
 tags: [django, orm]
 comments: true
 ---
