@@ -2,7 +2,7 @@
 layout: post
 title: "[장고 ORM] 역방향 참조 외래 키 찾기"
 author: bakyeono
-description: "[장고 ORM] 역방향 참조 외래 키 찾기"
+description: "역방향 참조를 수정하는 경우에는 수정할 모델을 가리키는 모든 모델을 수정해야 합니다. 어디서 이 모델을 가리키는지 다 모른다고요?"
 date: 2020-11-29 20:00 +0900
 tags: [django, orm]
 comments: true
