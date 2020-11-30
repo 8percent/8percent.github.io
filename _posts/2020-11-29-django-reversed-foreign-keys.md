@@ -52,7 +52,7 @@ class Purchase(Model):
 
 class Sell(Model):
     seller = ForeignKey(User, related_name='sells', ...)
-    product = ForeignKey(Product, related_name='purchases', ...)
+    product = ForeignKey(Product, related_name='sells', ...)
     ...
 ```
 
@@ -113,7 +113,7 @@ Sell.objects.filter(product=product_2).update(product=product_1)
 
 ## 역방향 참조를 모두 찾아 수정하기
 
-장고 모델 클래스에는 `_meta` 라는 속성이 정의되어 있습니다. 이 속성은 `Options` 클래스의 인스턴스로, 모델의 여러 가지 부가 정보가 정의되어 있는데 그 중에는 참조 관계 정보도 있습니다. `Options` 인스턴스의 다양한 정보 중 `related_objects` 속성이 바로 모델의 참조 관계를 담은 시퀀스입니다. for 문으로 확인해봅시다.
+장고 모델 클래스에는 `_meta` 라는 속성이 정의되어 있습니다. 이 속성은 `Options` 클래스의 인스턴스로, 모델의 여러 가지 부가 정보가 정의되어 있는데 그 중에는 관계 정보도 있습니다. `Options` 인스턴스의 다양한 정보 중 `related_objects` 속성이 바로 모델의 관계를 담은 시퀀스입니다. for 문으로 확인해봅시다.
 
 ```
 for related_object in Deal._meta.related_objects:
