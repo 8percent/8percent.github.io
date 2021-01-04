@@ -30,7 +30,7 @@ authors:
   munsu:
     name: munsu
     display_name: Mun Su Park
-  anohk:
+  anohk:s
     name: anohk
     display_name: An Young Noh
   bbungsang:
@@ -60,6 +60,9 @@ authors:
   bakyeono:
     name: bakyeono
     display_name: 박연오
+  selee:
+    name: selee
+    display_name: Chae Se Lee
 
 #  facebook:         your-id
 #  youtubeUser:      your-id
