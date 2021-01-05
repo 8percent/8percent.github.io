@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "8퍼센트 개발플랫폼 인턴 후기-1"
+title: "8퍼센트 플랫폼개발 인턴 후기-1"
 author: selee
 description: 첫 출근부터 인턴 최대 고민의 순간까지 8퍼센트 인턴 적응기
 ---
