@@ -81,7 +81,8 @@ authors:
 #  email:            your-id@your-email.com
 
 copyright:
-  year:             2020
+  start_year:           2019
+  end_year:             2021
   name:             8PERCENT
 
 # Google-analytics
