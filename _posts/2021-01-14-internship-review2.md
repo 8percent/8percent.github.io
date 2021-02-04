@@ -45,21 +45,28 @@ description: 한파도 어쩔 수 없는 에잇퍼센트 학습 열정. 많이 �
 
 머리 과부하 상태였는데 복습 안 하면 들은 의미가 없을 거 같아서 열심히 정리도 했다. 이처럼 저번 인턴 2주 차 이후로는 문서화를 하고 있다. 아직은 검색한 내용 짜집기에 불과하지만 그래도 Notion에 10개가 넘는 페이지가 쌓였다. 나중에는 직접 실습해보고 나만의 글도 정리해서 올리고 싶다.
 
-![TIL Channel](/images/internship-2-notion.jpg)
+<p align="center">
+   <img src="/images/internship-2-notion.jpg" alt="Notion" width="500">
+</p>
 
 ## <span style="color:#6741d9">에피소드</span>
 ### 퇴근 후 합법적 VR게임
 팀원 한 분이 VR 게임을 좋아하셔서 몇 번 이야기를 꺼내신 적이 있으시다. 그분께 이야기로만 들었던 VR 오큘러스를 직접 들고 오셨다. 게임을 너무 해보고 싶어서 퇴근하고 잠깐 게임을 했다. 나는 유명한 비트 세이버랑 암벽 등반 게임인 더 클라임을 했는데, VR로 암벽 등반하니깐 너무 생생해서 절벽에서 떨어질 때 비명을 질렀다... 인턴 끝나고 인턴비 받으면 오큘러스 사야겠다.
 
-![TIL Channel](/images/internship-2-vr게임.jpg)
+<p align="center">
+   <img src="/images/internship-2-vr게임.jpg" alt="VR 게임" width="500">
+</p>
 
 ### 영광의 팬 사인회
 [연오의 파이썬](https://python.bakyeono.net/) 이 나오고 사무실에서 미니 팬 사인회가 열렸다. 저자이신 연오님께서 직접 책에다가 사인과 해주고 싶은 말을 써주셨는데, 그날 나는 책을 안 가지고 와서 따로 받았다. 오래오래 보관해야지. 아 물론 이 책으로 공부도 열심히 할 거다.
 
-![TIL Channel](/images/internship-2-싸인.jpg)
+<p align="center">
+   <img src="/images/internship-2-싸인.jpg" alt="싸인" width="500">
+</p>
 
 ### 드디어 완전체. 치킨 파티다!
 우리 팀이 10명인데 휴가, 재택근무 때문에 한 번도 다 모인 적이 없는데, AWS 세미나 날 드디어 모든 분이 사무실에 나오셨다. **그래서 호성님께서 푸라닭 치킨을 무려 5마리나 쏘셨다.** 아주 좋은 회사에 들어왔다고 다시 한번 확신한 순간이었다. (호성님 만세)
 
-![TIL Channel](/images/internship-2-치킨파티.jpg)
-
+<p align="center">
+   <img src="/images/internship-2-치킨파티.jpg" alt="치킨파티" width="500">
+</p>
