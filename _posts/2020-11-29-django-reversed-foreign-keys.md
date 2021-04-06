@@ -17,7 +17,7 @@ comments: true
 하지만 반대로, 역방향 참조를 수정하는 경우(다른 모델이 수정할 모델을 가리킬 때)에는 수정할 모델을 가리키는 모든 모델을 수정해야 합니다. 어디서 이 모델을 가리키는지 다 모른다고요? 장고 모델 클래스의 `_meta.related_objects` 속성에서 찾을 수 있습니다.
 
 ```
-for related_object in Deal._meta.related_objects:
+for related_object in Product._meta.related_objects:
     print(
         related_object.related_model.__name__,
         related_object.remote_field.name,
@@ -116,7 +116,7 @@ Sell.objects.filter(product=product_2).update(product=product_1)
 장고 모델 클래스에는 `_meta` 라는 속성이 정의되어 있습니다. 이 속성은 `Options` 클래스의 인스턴스로, 모델의 여러 가지 부가 정보가 정의되어 있는데 그 중에는 관계 정보도 있습니다. `Options` 인스턴스의 다양한 정보 중 `related_objects` 속성이 바로 모델의 관계를 담은 시퀀스입니다. for 문으로 확인해봅시다.
 
 ```
-for related_object in Deal._meta.related_objects:
+for related_object in Product._meta.related_objects:
     print(related_object)
 
 # => <ManyToOneRel: shopping.purchase>
@@ -129,7 +129,7 @@ for related_object in Deal._meta.related_objects:
 모델과 외래 키 필드의 이름을 정확하게 확인해봅시다.
 
 ```
-for related_object in Deal._meta.related_objects:
+for related_object in Product._meta.related_objects:
     print(
         related_object.related_model.__name__,
         related_object.remote_field.name,
