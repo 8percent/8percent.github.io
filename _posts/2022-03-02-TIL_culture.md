@@ -12,7 +12,7 @@ comments: true
 
 플랫폼개발본부의 신규 입사자 - 경준님의 이야기🏃‍♂️
 
-![경준님](/images/kyungjun.jpeg){: width="400" height="700"}
+<img src="/images/kyungjun.jpeg" width="400" height="700">
 
 ## 0. 들어가기 전에
 
