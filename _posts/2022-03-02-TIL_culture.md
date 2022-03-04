@@ -67,7 +67,7 @@ for commission in get_commission(date):
 더 나아가 해당 내용을 기반으로 추가적으로 공부해야하는 부분을 함께 정리할 수 있었습니다.
 예를 들어,
 1) `.create`와 `.save`는 `force_insert`, `force_update` 라는 파라미터로 인해서 SQL Query문의 INSERT, UPDATE가 뭔지 정확하게 이해할 필요가 생겼고, 
-2) `.create`,와 `.save` 같이 가장 기본적인 method 중 `.update`는 `.save`와 어떤 차이가 있는지 알아보게 되었고,
+2) `.create`와 `.save` 같이 기본적인 method 중 `.update`는 `.save`와 어떤 차이가 있는지 알아보게 되었고,
 3) manual primary keys를 사용해서 데이터를 `INSERT`하는 경우, `Mysql`과 `Postgresql`은 각각 어떤 방식으로 순차적인 primary key를 생성하는지 알아보게 되었습니다.
 
 때로는 이러한 소스를 TIL 채널에 과거에 다른 팀원 분들이 올려준 자료를 참고하기도 합니다. 즉 TIL이 누적되면 누적될수록 개발팀 내부의 자산으로 더욱 가치를 발휘할 수 있는 것 같습니다.
