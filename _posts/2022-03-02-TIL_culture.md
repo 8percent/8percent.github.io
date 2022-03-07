@@ -7,7 +7,6 @@ date: 2022-03-04 12:00 +0900
 tags: [python, django, Queryset, ORM, Queryset API]
 comments: true
 ---
-에잇퍼센트의 프로덕트 그룹의 배우고 나누기. 나누기 위해 배우기
 
 플랫폼개발본부의 신규 입사자 - 경준님의 이야기🏃‍♂️
 
