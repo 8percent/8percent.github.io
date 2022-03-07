@@ -3,7 +3,6 @@ layout: post
 title: "에잇퍼센트 프로덕트 그룹의 TIL 문화"
 author: jjune
 description: 너와 나만 알고 싶은 성장 문화 - TIL
-date: 2022-03-07 12:00 +0900
 tags: [python, django, Queryset, ORM, Queryset API]
 comments: true
 ---
