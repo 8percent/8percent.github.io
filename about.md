@@ -11,6 +11,6 @@ permalink: /about/
 
 ## 프로덕트 팀 소개
 
-<img width="972" alt="2018_" src="https://user-images.githubusercontent.com/20920853/47770877-6fdb3c00-dd24-11e8-801a-af6f8bf0ba6c.png">
+<img width="972" alt="2022_" src="/images/220519단체사진.jpg">
 
 개발자와 기획자 그리고 디자이너가 함께 모여 세상을 바꿀 제품을 만들어 가고 있습니다.
