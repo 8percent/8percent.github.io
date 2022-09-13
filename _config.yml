@@ -64,14 +64,14 @@ authors:
     name: selee
     display_name: Chae Se Lee
   minjung:
-    name: minjung
-    display_name: Minjung Kim
+    name: minjeong
+    display_name: Minjeong Kim
   seunghee:
     name: seunghee
     display_name: Seunghee Jo
   minjung_seunghee:
-    name: minjung_seunghee
-    display_name: 김민정, 조승희
+    name: minjeong_seunghee
+    display_name: Minjeong Kim, Seunghee Jo
 
 #  facebook:         your-id
 #  youtubeUser:      your-id
