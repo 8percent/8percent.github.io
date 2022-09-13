@@ -3,7 +3,7 @@
 # # # # # # # # # # # # #
 
 # Basic
-name:               "8퍼센트 프로덕트 블로그"
+name: "8퍼센트 프로덕트 블로그"
 
 authors:
   leclipse:
@@ -63,9 +63,15 @@ authors:
   selee:
     name: selee
     display_name: Chae Se Lee
-  jjune:
-    name: jjune
-    display_name: Kyungjun Lee
+  minjung:
+    name: minjeong
+    display_name: Minjeong Kim
+  seunghee:
+    name: seunghee
+    display_name: Seunghee Jo
+  minjung_seunghee:
+    name: minjeong_seunghee
+    display_name: Minjeong Kim, Seunghee Jo
 
 #  facebook:         your-id
 #  youtubeUser:      your-id
@@ -84,9 +90,9 @@ authors:
 #  email:            your-id@your-email.com
 
 copyright:
-  start_year:           2017
-  end_year:             2021
-  name:             8PERCENT
+  start_year: 2017
+  end_year: 2021
+  name: 8PERCENT
 
 # Google-analytics
 #google-analytics:
@@ -97,56 +103,53 @@ copyright:
 #  id:               "kiko-plus"
 
 # URL
-url:                "https://8percent.github.io" # the base hostname & protocol for your site
+url: "https://8percent.github.io" # the base hostname & protocol for your site
 # url:                "http://localhost:4000" # use this url when you develop
-baseurl:            "" # the subpath of your site, e.g. /blog
-
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:           Asia/Seoul
-permalink:          /:year-:month-:day/:title/
+timezone: Asia/Seoul
+permalink: /:year-:month-:day/:title/
 
 # Pagination
-paginate:           5
-paginate_path:      /page:num/
+paginate: 5
+paginate_path: /page:num/
 
 # Markdown
-markdown:           kramdown
+markdown: kramdown
 kramdown:
-  input:            GFM
+  input: GFM
 
 # Navigation
 nav:
-  - name:           "소개"
-    url:            "/about"
-#  - name:           "블로그"
-#    url:            "/"
-  - name:           "8퍼센트 브런치"
-    url:            "https://brunch.co.kr/magazine/8percent"
-#  - name:           "Github"
-#    url:            "https://github.com/8percent/8percent.github.io"
-  - name:           "채용정보"
-    url:            "/recruit"
+  - name: "소개"
+    url: "/about"
+  #  - name:           "블로그"
+  #    url:            "/"
+  - name: "8퍼센트 브런치"
+    url: "https://brunch.co.kr/magazine/8percent"
+  #  - name:           "Github"
+  #    url:            "https://github.com/8percent/8percent.github.io"
+  - name: "채용정보"
+    url: "/recruit"
 
 # Sass
 sass:
-  sass_dir:         _sass
-  style:            :compressed
+  sass_dir: _sass
+  style: :compressed
 
 # Scopes
 defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
+  - scope:
+      path: ""
+      type: "pages"
     values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
     values:
-      layout:       "post"
+      layout: "post"
 
 # jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
 plugins:
@@ -154,4 +157,4 @@ plugins:
   - jekyll-paginate
   - jekyll-admin
 
-exclude:            [vendor]
+exclude: [vendor]
