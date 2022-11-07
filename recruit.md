@@ -34,7 +34,7 @@ permalink: /recruit/
 
 ## 참고해 주세요
 
-* [8퍼센트 브런치](https://brunch.co.kr/magazine/8percent){:target="_blank"}
+* [공식 블로그](https://blog.8percent.kr/){:target="_blank"}
 * [(여러분이 함께 일하게 되실)이호성의 블로그](http://blog.novice.io){:target="_blank"}
 * [예전에 쓴 채용글](https://brunch.co.kr/@8percent/23){:target="_blank"}
 
