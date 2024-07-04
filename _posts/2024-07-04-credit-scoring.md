@@ -83,7 +83,7 @@ Neural Network는 신경망의 구조에 영감을 받아 고안된 모형입니
 
 ### MLP
 
-<img src="/images/css-2.png" alt="css-2" width="800"/>
+<img src="/images/css-2.png" alt="css-2" width="600"/>
 
 출처: [https://engineersplanet.com/35408-2-neural-networks/](https://engineersplanet.com/35408-2-neural-networks/)
 
@@ -91,7 +91,7 @@ Neural Network에서 여러 개의 Hidden Layer를 두어 비선형적인 관계
 
 ### ResNet
 
-<img src="/images/css-3.png" alt="css-3" width="800"/>
+<img src="/images/css-3.png" alt="css-3" width="400"/>
 
 출처: [1512.03385 (arxiv.org)](https://arxiv.org/pdf/1512.03385)
 
@@ -103,9 +103,7 @@ Neural Network 모형에서 깊이가 깊어지면서 Gradient Vanishing 혹은 
 
 출처: https://github.com/pashu123/Transformers
 
-<img src="/images/css-4.png" alt="css-5" width="600"/>
-
-<img src="/images/css-4.png" alt="css-6" width="600"/>
+<img src="/images/css-5.png" alt="css-5" width="600"/><img src="/images/css-6.png" alt="css-6" width="600"/>
 
 출처: [Transformers in Action: Attention Is All You Need | by Soran Ghaderi | Towards Data Science](https://towardsdatascience.com/transformers-in-action-attention-is-all-you-need-ac10338a023a)
 
