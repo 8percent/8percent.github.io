@@ -1,3 +1,13 @@
+---
+layout: post
+title: "에잇퍼센트 CSS팀의 신용평가 모험"
+author: jaekyun
+date: 2024-07-05
+tags: [culture, onboarding]
+comments: true
+description: 신용평가에 머신러닝을 도입
+---
+
 # 신용 평가 모델링
 
 # 소개
