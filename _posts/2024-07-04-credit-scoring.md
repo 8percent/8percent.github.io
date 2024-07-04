@@ -2,7 +2,7 @@
 layout: post
 title: "신용평가에서 사용해보는 머신러닝"
 author: jaekyun
-date: 2024-07-05
+date: 2024-07-04
 tags: [data]
 comments: true
 description: 에잇퍼센트 CSS팀의 신용평가에서의 머신러닝 탐험
