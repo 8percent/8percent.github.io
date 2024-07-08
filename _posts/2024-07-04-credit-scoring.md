@@ -107,7 +107,7 @@ Neural Network 모형에서 깊이가 깊어지면서 Gradient Vanishing 혹은 
 
 출처: [Transformers in Action: Attention Is All You Need | by Soran Ghaderi | Towards Data Science](https://towardsdatascience.com/transformers-in-action-attention-is-all-you-need-ac10338a023a)
 
-Transformer는 Sequence To Sequence에 해당하는 자연어 처리 분야에서 도입된 모형입니다. 핵심 구조로 input sequence 내에서 각 값들 사이의 영향을 파악하여 어느 부분을 주목해서 예측 할지 판단하기 위한 Self Attention과 input sequence와 output sequence 사이의 영향을 파악하여 예측에 활용하는 Cross Attentiond이 있습니다.
+Transformer는 Sequence To Sequence에 해당하는 자연어 처리 분야에서 도입된 모형입니다. 핵심 구조로 input sequence 내에서 각 값들 사이의 영향을 파악하여 어느 부분을 주목해서 예측 할지 판단하기 위한 Self Attention과 input sequence와 output sequence 사이의 영향을 파악하여 예측에 활용하는 Cross Attention이 있습니다.
 
 <img src="/images/css-7.png" alt="css-7" width="1200"/>
 
