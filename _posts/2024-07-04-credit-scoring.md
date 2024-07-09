@@ -63,7 +63,7 @@ Neural Network 기반의 모형에서는 큰 값을 처리할 때 기울기 증�
 
 ### Decision Tree
 
-Decision Tree란 Tree구조를 통해 판단을 내리는 모형으로, 어떠한 변수 들의 값을 기준으로 가지를 치게 됩니다. 그리하여 특정 데이터의 예측 값은 루트 노드로부터 각 기준을 거쳐 입 노드로 이어지는 경로를 통해 구하게 됩니다. 가지를 분할할 때에는 Greedy한 방식으로 Loss를 줄이는 방식으로 분할하게 됩니다. Decision Tree 자체만으로도 모델링을 하긴 하지만, 이를 응용한 Random Forest나 Gradient Boosting을 더 많이 사용합니다.
+Decision Tree란 Tree구조를 통해 판단을 내리는 모형으로, 어떠한 변수 들의 값을 기준으로 가지를 치게 됩니다. 그리하여 특정 데이터의 예측 값은 루트 노드로부터 각 기준을 거쳐 잎 노드로 이어지는 경로를 통해 구하게 됩니다. 가지를 분할할 때에는 Greedy한 방식으로 Loss를 줄이는 방식으로 분할하게 됩니다. Decision Tree 자체만으로도 모델링을 하긴 하지만, 이를 응용한 Random Forest나 Gradient Boosting을 더 많이 사용합니다.
 
 ### Random Forest
 
