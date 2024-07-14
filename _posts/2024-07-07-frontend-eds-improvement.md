@@ -134,7 +134,7 @@ description: 디자인 시스템과 개발 및 적용 과정의 문제점 분석
 ></eds-button>
 ```
 
-Figma 컴포넌트 라이브러리는 Figma Page, Section 명칭에 따른 계층화를 지원하며, 해당 기능에 접근이 가능한 디자인 팀에서는 효율적이며 선호하는 방식이었습니다. 하지만 Figma 컴포넌트 라이브러리에 접근 권한이 없으면 Page, Section 명칭에 따른 계층화가 지원되지 않았습니다. 접근 권한이 없는 환경의 개발자는 Button의 Section 기능으로 나눠진 `size`를 알 수 없습니다. EDS Figma의 `size="custom"`가 `크기` 속성을 나타내지 않는다는 것을 인지한 후, 정확한 속성을 알기 위해 명세가 텍스트로 적힌 EDS Figma 문서를 반복적으로 확인해야 하는 번거로움이 있었습니다.
+Figma 컴포넌트 라이브러리는 Figma Page, Section 명칭에 따른 계층화를 지원하며, 해당 기능에 접근이 가능한 디자인 팀에서는 효율적이며 선호하는 방식이었습니다. 하지만 Figma 컴포넌트 라이브러리에 접근 권한이 없으면 Page, Section 명칭에 따른 계층화가 지원되지 않았습니다. 접근 권한이 없는 환경의 개발자는 Button의 Section 기능으로 나눠진 `size`를 알 수 없습니다. EDS Figma의 `size="custom"` 속성과 값이 `크기` 속성을 나타내지 않는다는 것을 인지한 후, EDS Figma 상으로 정보가 제공되지 않는 속성 정보를 알기 위해 별도의 EDS Figma 텍스트 문서를 반복적으로 확인해야 하는 번거로움이 있었습니다.
 
 ## 문제점 개선 방안
 
@@ -146,33 +146,40 @@ Figma 컴포넌트 라이브러리는 Figma Page, Section 명칭에 따른 계�
 
 2.  **EDS Figma에 대한 규약을 추가합니다.**
 
-    개발자는 EDS Figma로부터 EDS Code 필요한 모든 정보를 얻을 수 있어야 합니다. 그렇다면 디자이너는 EDS Figma로 어디까지 정보를 제공해야할까요? 그 기준을 Figma Plugin API로 접근할 수 있는 EDS [ComponentSetNode](https://www.figma.com/plugin-docs/api/ComponentSetNode/)와 [InstanceNode](https://www.figma.com/plugin-docs/api/InstanceNode/#getmaincomponentasync)로 부터 EDS Code 구현을 위한 데이터를 추출이 가능한 정도로 정의하였습니다. ComponentSetNode 생성 시 EDS Code 구현을 위해 필요한 두 가지 최소 조건은 다음과 같습니다.
+    개발자는 EDS Figma로부터 EDS Code 필요한 모든 정보를 얻을 수 있어야 합니다. 그렇다면 디자이너는 EDS Figma로 어디까지 정보를 제공해야할까요? 그 기준을 Figma Plugin API로 접근할 수 있는 EDS [ComponentSetNode](https://www.figma.com/plugin-docs/api/ComponentSetNode/)와 [InstanceNode](https://www.figma.com/plugin-docs/api/InstanceNode/#getmaincomponentasync)로 부터 EDS Code 구현을 위한 데이터를 추출이 가능한 정도로 정의하였습니다. ComponentSetNode 생성 시 EDS Code 구현을 위해 필요한 세 가지 최소 조건은 다음과 같습니다.
 
-    1.  생성되는 EDS Figma ComponentSetNode의 이름 내에 EDS 컴포넌트 명칭에 대한 데이터가 있어야 합니다.
-        이는 다른 Figma ComponentSetNode와 구별을 위함입니다.
+    1. 컴포넌트의 기능은 EDS Figma ComponentSetNode의 이름 또는 속성으로 구분되어야합니다.
 
-        ```md
-        GOOD 🟢 ) EdsButton, EDS Button, <EdsButton>, <EDS Button>
-        BAD ❌ ) Primary, Atom, Button
-        ```
+       ```
+        GOOD 🟢 ) <EdsButton> + property(size: ['sm', 'md', 'lg'])
+        BAD ❌ ) Figma Section 별로 size 분리
+       ```
 
-    2.  동일한 기능을 나타내기 위해 사용되는 property의 값은 통일되어야 합니다.
+    2. 생성되는 EDS Figma ComponentSetNode의 이름 내에 EDS 컴포넌트 명칭에 대한 데이터가 있어야 합니다.
+       이는 다른 Figma ComponentSetNode와 구별을 위함입니다.
 
-        ```md
-        GOOD 🟢 )
-        <Button> + property(size: ['sm', 'md', 'lg'])
-        <Textfield> + property(size: ['sm', 'md', 'lg'])
-        BAD ❌ )
-        <Button> + property(size: ['small', 'medium', 'large'])
-        <Textfield> + property(size: ['sm', 'md', 'lg'])
+       ```md
+       GOOD 🟢 ) EdsButton, EDS Button, <EdsButton>, <EDS Button>
+       BAD ❌ ) Primary, Atom, Button
+       ```
 
-        GOOD 🟢 )
-        <Checkbox> + property(disabled: [true, false])
-        <Toggle> + property(disabled: [true, false])
-        BAD ❌ )
-        <Checkbox> + property(disabled: [true, false])
-        <Toggle> + property(usable: ['able', 'disable'])
-        ```
+    3. 동일한 기능을 나타내기 위해 사용되는 property의 값은 통일되어야 합니다.
+
+       ```md
+       GOOD 🟢 )
+       <EdsButton> + property(size: ['sm', 'md', 'lg'])
+       <EdsTextfield> + property(size: ['sm', 'md', 'lg'])
+       BAD ❌ )
+       <EdsButton> + property(size: ['small', 'medium', 'large'])
+       <EdsTextfield> + property(size: ['sm', 'md', 'lg'])
+
+       GOOD 🟢 )
+       <EdsCheckbox> + property(disabled: [true, false])
+       <EdsToggle> + property(disabled: [true, false])
+       BAD ❌ )
+       <EdsCheckbox> + property(disabled: [true, false])
+       <EdsToggle> + property(usable: ['able', 'disable'])
+       ```
 
 3.  **Figma Plugin API를 통해 EDS Figma를 EDS Code 수준으로 추상화된 코드를 제공합니다.**
 
