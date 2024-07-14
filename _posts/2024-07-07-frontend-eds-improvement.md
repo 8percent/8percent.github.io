@@ -148,7 +148,7 @@ Figma 컴포넌트 라이브러리는 Figma Page, Section 명칭에 따른 계�
 
     개발자는 EDS Figma로부터 EDS Code 필요한 모든 정보를 얻을 수 있어야 합니다. 그렇다면 디자이너는 EDS Figma로 어디까지 정보를 제공해야할까요? 그 기준을 Figma Plugin API로 접근할 수 있는 EDS [ComponentSetNode](https://www.figma.com/plugin-docs/api/ComponentSetNode/)와 [InstanceNode](https://www.figma.com/plugin-docs/api/InstanceNode/#getmaincomponentasync)로 부터 EDS Code 구현을 위한 데이터를 추출이 가능한 정도로 정의하였습니다. ComponentSetNode 생성 시 EDS Code 구현을 위해 필요한 세 가지 최소 조건은 다음과 같습니다.
 
-    1. 컴포넌트의 기능은 EDS Figma ComponentSetNode의 이름 또는 속성으로 구분되어야합니다.
+    1. 컴포넌트의 기능은 EDS Figma ComponentSetNode의 이름 또는 property 기능으로 구분되어야합니다.
 
        ```
         GOOD 🟢 ) <EdsButton> + property(size: ['sm', 'md', 'lg'])
