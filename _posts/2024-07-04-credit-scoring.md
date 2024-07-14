@@ -63,7 +63,7 @@ Neural Network 기반의 모형에서는 큰 값을 처리할 때 기울기 증�
 
 ### Decision Tree
 
-Decision Tree란 Tree구조를 통해 판단을 내리는 모형으로, 어떠한 변수 들의 값을 기준으로 가지를 치게 됩니다. 그리하여 특정 데이터의 예측 값은 루트 노드로부터 각 기준을 거쳐 입 노드로 이어지는 경로를 통해 구하게 됩니다. 가지를 분할할 때에는 Greedy한 방식으로 Loss를 줄이는 방식으로 분할하게 됩니다. Decision Tree 자체만으로도 모델링을 하긴 하지만, 이를 응용한 Random Forest나 Gradient Boosting을 더 많이 사용합니다.
+Decision Tree란 Tree구조를 통해 판단을 내리는 모형으로, 어떠한 변수 들의 값을 기준으로 가지를 치게 됩니다. 그리하여 특정 데이터의 예측 값은 루트 노드로부터 각 기준을 거쳐 잎 노드로 이어지는 경로를 통해 구하게 됩니다. 가지를 분할할 때에는 Greedy한 방식으로 Loss를 줄이는 방식으로 분할하게 됩니다. Decision Tree 자체만으로도 모델링을 하긴 하지만, 이를 응용한 Random Forest나 Gradient Boosting을 더 많이 사용합니다.
 
 ### Random Forest
 
@@ -107,7 +107,7 @@ Neural Network 모형에서 깊이가 깊어지면서 Gradient Vanishing 혹은 
 
 출처: [Transformers in Action: Attention Is All You Need | by Soran Ghaderi | Towards Data Science](https://towardsdatascience.com/transformers-in-action-attention-is-all-you-need-ac10338a023a)
 
-Transformer는 Sequence To Sequence에 해당하는 자연어 처리 분야에서 도입된 모형입니다. 핵심 구조로 input sequence 내에서 각 값들 사이의 영향을 파악하여 어느 부분을 주목해서 예측 할지 판단하기 위한 Self Attention과 input sequence와 output sequence 사이의 영향을 파악하여 예측에 활용하는 Cross Attentiond이 있습니다.
+Transformer는 Sequence To Sequence에 해당하는 자연어 처리 분야에서 도입된 모형입니다. 핵심 구조로 input sequence 내에서 각 값들 사이의 영향을 파악하여 어느 부분을 주목해서 예측 할지 판단하기 위한 Self Attention과 input sequence와 output sequence 사이의 영향을 파악하여 예측에 활용하는 Cross Attention이 있습니다.
 
 <img src="/images/css-7.png" alt="css-7" width="1200"/>
 
