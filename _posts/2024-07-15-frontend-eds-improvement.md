@@ -177,7 +177,7 @@ Figma 컴포넌트 라이브러리는 Figma Page, Section 명칭에 따른 계�
        BAD ❌ ) Primary, Atom, Button
        ```
 
-    3. 동일한 기능을 나타내기 위해 사용되는 property의 값은 통일되어야 합니다.
+    3. 동일한 기능을 나타내기 위해 사용되는 property의 값은 통일되어야 합니다. (property의 enum화)
 
        ```md
        GOOD 🟢 )
