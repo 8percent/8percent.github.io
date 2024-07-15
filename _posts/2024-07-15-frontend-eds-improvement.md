@@ -2,7 +2,7 @@
 layout: post
 title: "디자인 시스템, 디자인과 코드의 간극 줄이기"
 author: minjeong
-date: 2024-07-07
+date: 2024-07-15
 tags: [frontend, design system, eds, figma]
 comments: true
 description: 디자인 시스템과 개발 및 적용 과정의 문제점 분석과 Figma Plugin API를 활용한 도구 소개
