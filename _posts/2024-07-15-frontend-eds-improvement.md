@@ -242,7 +242,7 @@ EDS Lint는 Figma 플러그인으로, 생성된 EDS Figma의 ComponentSetNode가
    </div>
 
    - 신규 ComponentSetNode 명칭을 입력하고 Create 버튼을 클릭 시, ComponentSetNode가 생성됩니다.
-   - 규약 된(defined) 공통 속성의 체크박스를 클릭 시, 해당 속성과 값을 가진 Variant가 자동 생성됩니다.
+   - 사전 정의 된(defined) 공통 속성의 체크박스를 클릭 시, 해당 속성과 값을 가진 Variant가 자동 생성됩니다.
 
 2. **기존 EDS ComponentSetNode Lint 기능**
 
@@ -251,8 +251,8 @@ EDS Lint는 Figma 플러그인으로, 생성된 EDS Figma의 ComponentSetNode가
    </div>
 
    - 필수 속성이 사용되지 않았을 경우 에러를 표기합니다.
-   - 규약 된(defined) 속성의 정의된 값 외 사용에 대한 에러를 표기합니다.
-   - 규약 되지 않은(not defined) 속성 사용에 대한 정보를 제공합니다.
+   - 사전 정의 된(defined) 속성값 외 사용에 대한 에러를 표기합니다.
+   - 사전 정의 되지 않은(not defined) 속성 사용에 대한 정보를 제공합니다.
 
 ### EDS Codegen
 
