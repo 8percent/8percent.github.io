@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/c455eb04-900b-4917-a140-08c7c4aba973)---
 title: 함께 일해요
 permalink: /recruit/
 ---
